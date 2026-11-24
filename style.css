@@ -741,8 +741,12 @@ footer {
     background: #25a95b;
     color: white;
     font-size: 1.5rem;
-    box-shadow: 0 8px 25px #0004
+    box-shadow: 0 8px 25px #0004;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 dialog {
     border: 0;
