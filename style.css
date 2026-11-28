@@ -649,6 +649,84 @@ button {
     margin: 22px 0 28px
 }
 
+.client-trust {
+    margin: 0;
+    padding: 90px 0;
+    text-align: center
+}
+
+.client-trust h2 {
+    max-width: none;
+    margin: 14px 0 34px;
+    font-size: clamp(1.8rem, 3.2vw, 2.7rem)
+}
+
+.client-carousel {
+    overflow: hidden;
+    cursor: grab;
+    touch-action: pan-y;
+    user-select: none;
+    -webkit-user-select: none;
+    outline: none;
+    border-radius: 14px
+}
+
+.client-carousel:focus-visible {
+    outline: 3px solid var(--blue);
+    outline-offset: 5px
+}
+
+.client-carousel.is-dragging {
+    cursor: grabbing
+}
+
+.client-track,
+.client-group {
+    display: flex;
+    width: max-content
+}
+
+.client-group {
+    flex: none;
+    gap: 20px;
+    padding-right: 20px
+}
+
+.client-logo {
+    width: clamp(170px, 22vw, 235px);
+    height: 128px;
+    flex: none;
+    display: grid;
+    place-items: center;
+    padding: 22px;
+    border: 1px solid #e8edf3;
+    border-radius: 12px;
+    background: #f8fafc
+}
+
+.client-logo img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(1);
+    opacity: .72;
+    transition: filter .25s, opacity .25s, transform .25s
+}
+
+.client-logo:hover img {
+    opacity: 1;
+    transform: scale(1.04)
+}
+
+.client-hint {
+    margin: 14px 0 0;
+    color: #68788a;
+    font-size: .8rem
+}
+
 .contact {
     background: radial-gradient(circle at 80% 0%, #1f4d7c 0%, #101c32 48%);
     color: white;
@@ -860,6 +938,21 @@ dialog p {
 
     .section {
         padding: 75px 0
+    }
+
+    .client-trust {
+        padding: 75px 0
+    }
+
+    .client-group {
+        gap: 14px;
+        padding-right: 14px
+    }
+
+    .client-logo {
+        width: clamp(155px, 48vw, 205px);
+        height: 112px;
+        padding: 18px
     }
 
     .values,
